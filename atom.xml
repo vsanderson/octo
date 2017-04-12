@@ -4,7 +4,7 @@
   <title><![CDATA[Valerian Anderson]]></title>
   <link href="http://vsanderson.github.io/octo/atom.xml" rel="self"/>
   <link href="http://vsanderson.github.io/octo/"/>
-  <updated>2017-04-12T15:08:56-04:00</updated>
+  <updated>2017-04-12T15:45:55-04:00</updated>
   <id>http://vsanderson.github.io/octo/</id>
   <author>
     <name><![CDATA[VS Anderson]]></name>
@@ -14,11 +14,48 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://vsanderson.github.io/octo/blog/2017/04/12/hello-world/"/>
-    <updated>2017-04-12T14:44:16-04:00</updated>
-    <id>http://vsanderson.github.io/octo/blog/2017/04/12/hello-world</id>
-    <content type="html"><![CDATA[
+    <title type="html"><![CDATA[Crossing the Delaware...]]></title>
+    <link href="http://vsanderson.github.io/octo/blog/2017/04/10/crossing-the-delaware/"/>
+    <updated>2017-04-10T00:00:00-04:00</updated>
+    <id>http://vsanderson.github.io/octo/blog/2017/04/10/crossing-the-delaware</id>
+    <content type="html"><![CDATA[<p>I often cycle near Washington Crossing Park. I&rsquo;m intrigued by the bridge crossing the Delaware, and usually photograph it whenever I&rsquo;m there.</p>
+
+<p><img src="http://vsanderson.github.io/octo/images/delaware_panorama.jpg" alt="Delaware Panorama" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Clojure]]></title>
+    <link href="http://vsanderson.github.io/octo/blog/2017/04/05/new-post/"/>
+    <updated>2017-04-05T00:00:00-04:00</updated>
+    <id>http://vsanderson.github.io/octo/blog/2017/04/05/new-post</id>
+    <content type="html"><![CDATA[<p>I continue to be amazed by the simplicity of Clojure. Here&rsquo;s a simple function to reverse a list using recursion.
+Of course, recursion is not unique to Clojure: but recursion (and abstraction) are built into the Lisp family of languages
+in fundamental way. It&rsquo;s part of their design, and leads to a programming style that focuses less on iteration and control structures, and more on data and the problem space.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='clojure'><span class='line'><span class="p">(</span><span class="kd">defn </span><span class="nv">recursive-reverse</span> <span class="p">[</span><span class="nv">coll</span><span class="p">]</span>
+</span><span class='line'>  <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">not </span><span class="p">(</span><span class="nb">seq </span><span class="nv">coll</span><span class="p">))</span>
+</span><span class='line'>    <span class="nv">coll</span>
+</span><span class='line'>    <span class="p">(</span><span class="nf">flatten</span> <span class="p">(</span><span class="nb">conj </span><span class="p">(</span><span class="nb">list </span><span class="p">(</span><span class="nb">first </span><span class="nv">coll</span><span class="p">))</span> <span class="p">(</span><span class="nf">recursive-reverse</span> <span class="p">(</span><span class="nb">rest </span><span class="nv">coll</span><span class="p">))))))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Recursive Lisp is so expressive. I think this is my favorite part about Clojure. Even Ruby doesn&rsquo;t quite get the expressive simplicity achieved by Clojure.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Github: Up and Running]]></title>
+    <link href="http://vsanderson.github.io/octo/blog/2017/04/04/Hello-World/"/>
+    <updated>2017-04-04T00:00:00-04:00</updated>
+    <id>http://vsanderson.github.io/octo/blog/2017/04/04/Hello-World</id>
+    <content type="html"><![CDATA[<p>Using Barry Clark&rsquo;s nice jekyll Now repository,  <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a>, so far the easiest &ldquo;getting started on github pages&rdquo; repo.</p>
+
+<p><img src="http://vsanderson.github.io/octo/images/config.png" alt="_config.yml" /></p>
 ]]></content>
   </entry>
   
